@@ -10,11 +10,13 @@
 }
 
 body {
+    height: 98vh;
     font-family: 'Overpass', sans-serif;
     font-size: 15px;
     background-color: var(--very-dark-blue);
     display: grid;
-    place-items: center;
+    align-content: center;
+    justify-content: center;
 }
 main {
     background-color: var(--dark-blue);
