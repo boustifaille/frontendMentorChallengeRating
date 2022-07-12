@@ -1,4 +1,4 @@
-let actualRating = "5";
+let actualRating;
 /*submit();*/
 const numbers = document.querySelectorAll(".numbers > div");
 
@@ -23,9 +23,14 @@ function submit() {
   const thankYou = document.querySelector(".thank-you");
   const rating = document.querySelector(".rating");
   const result = document.querySelector(".result");
-  result.innerHTML = actualRating
-  rating.style.display = "none";
-  thankYou.style.display = "flex";
+  if (actualRating){
+    result.innerHTML = actualRating
+    rating.style.display = "none";
+    thankYou.style.display = "flex";
+  }
+  else {
+    alert("You must select a rating")
+  }
 }
 
 
